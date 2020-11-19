@@ -40,8 +40,6 @@
 
     <!-- Custom theme stylesheets -->
     
-    <link rel="stylesheet" href="css/custom.css">
-    
 
     
 </head>
@@ -95,7 +93,7 @@
 
     <nav id="sidebar" class="sidebar" aria-label="Table of contents">
         <div class="sidebar-scrollbox">
-            <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> LFE Quick Start with rebar3_lfe</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="title.html"><strong aria-hidden="true">1.1.</strong> Title Page</a></li><li class="chapter-item expanded "><a href="copyright.html"><strong aria-hidden="true">1.2.</strong> Copyright</a></li></ol></li><li class="chapter-item expanded "><a href="intro/index.html"><strong aria-hidden="true">2.</strong> Introduction</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="intro/lfe.html"><strong aria-hidden="true">2.1.</strong> LFE</a></li><li class="chapter-item expanded "><a href="intro/erlang.html"><strong aria-hidden="true">2.2.</strong> Erlang</a></li><li class="chapter-item expanded "><a href="intro/rebar3.html"><strong aria-hidden="true">2.3.</strong> rebar3</a></li></ol></li><li class="chapter-item expanded "><a href="plaid.html"><strong aria-hidden="true">3.</strong> Going Plaid</a></li><li class="chapter-item expanded "><a href="proj.html"><strong aria-hidden="true">4.</strong> Creating a New Project</a></li><li class="chapter-item expanded "><a href="code.html"><strong aria-hidden="true">5.</strong> LFE Code</a></li><li class="chapter-item expanded "><a href="behind.html"><strong aria-hidden="true">6.</strong> Behind the Scenes</a></li><li class="chapter-item expanded "><a href="next.html"><strong aria-hidden="true">7.</strong> Where Next?</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="feedback.html">Feedback</a></li><li class="chapter-item expanded affix "><a href="redirects/docs.html">LFE Documentation</a></li><li class="chapter-item expanded affix "><a href="redirects/rebar3.html">LFE rebar3 Plugin</a></li><li class="chapter-item expanded affix "><a href="redirects/mdbook.html">Built with mdBook</a></li></ol>
+            <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> LFE Quick Start with rebar3_lfe</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="title.html"><strong aria-hidden="true">1.1.</strong> Title Page</a></li><li class="chapter-item expanded "><a href="copyright.html"><strong aria-hidden="true">1.2.</strong> Copyright</a></li></ol></li><li class="chapter-item expanded "><a href="intro/index.html"><strong aria-hidden="true">2.</strong> Introduction</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="intro/lfe.html"><strong aria-hidden="true">2.1.</strong> LFE</a></li><li class="chapter-item expanded "><a href="intro/erlang.html"><strong aria-hidden="true">2.2.</strong> Erlang</a></li><li class="chapter-item expanded "><a href="intro/rebar3.html"><strong aria-hidden="true">2.3.</strong> rebar3</a></li></ol></li><li class="chapter-item expanded "><a href="plaid.html"><strong aria-hidden="true">3.</strong> Going Plaid</a></li><li class="chapter-item expanded "><a href="proj.html"><strong aria-hidden="true">4.</strong> Creating a New Project</a></li><li class="chapter-item expanded "><a href="code/index.html"><strong aria-hidden="true">5.</strong> LFE Code</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="code/repl.html"><strong aria-hidden="true">5.1.</strong> The REPL</a></li><li class="chapter-item expanded "><a href="code/sample.html"><strong aria-hidden="true">5.2.</strong> Sample Code</a></li><li class="chapter-item expanded "><a href="code/msgs.html"><strong aria-hidden="true">5.3.</strong> Message-Passing</a></li></ol></li><li class="chapter-item expanded "><a href="behind.html"><strong aria-hidden="true">6.</strong> Behind the Scenes</a></li><li class="chapter-item expanded "><a href="next.html"><strong aria-hidden="true">7.</strong> Where Next?</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="feedback.html">Feedback</a></li><li class="chapter-item expanded affix "><a href="redirects/docs.html">LFE Documentation</a></li><li class="chapter-item expanded affix "><a href="redirects/rebar3.html">LFE rebar3 Plugin</a></li><li class="chapter-item expanded affix "><a href="redirects/mdbook.html">Built with mdBook</a></li></ol>
         </div>
         <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
     </nav>
@@ -197,7 +195,7 @@
 <br/>
 <br/>
 <br/>
-<p><a href="https://cnbb.pub/"><img src="images/cnbb-pub-logo-1.6.png" alt="publisher logo" /></a></p>
+<p><a href="http://cnbb.pub/"><img src="images/cnbb-pub-logo-1.6.png" alt="publisher logo" /></a></p>
 <!-- Named page links below: /-->
 <p>Published by Cowboys 'N' Beans Books</p>
 <p><a href="https://github.com/cnbbooks">https://github.com/cnbbooks</a> ◈ <a href="http://cnbb.pub/">http://cnbb.pub/</a> ◈ <a href="mailto:info@cnbb.pub">info@cnbb.pub</a></p>
@@ -266,16 +264,44 @@ on the Erlang VM will use it as a build tool.</p>
 <p>The <a href="https://www.rebar3.org/docs/getting-started#installing-binary">rebar3 site</a> provides some nice instructions on installing <code>rebar3</code>.</p>
 <h1><a class="header" href="#going-plaid" id="going-plaid">Going Plaid</a></h1>
 <p><img src="https://raw.githubusercontent.com/lfe/docs/master/docs/current/images/plaid.jpg"
-     style="float: right;">
-The rest of this quick-start assumes that you've followed the links in the previous section and have installed both Erlang as well as <code>rebar3</code>.</p>
-<p>This <em>is</em> a quick-start, though: a blur of colour. You're not going to get very many
+     style="float: right;"></p>
+<p>Remember: this <em>is</em> a quick-start; it's going to be a blur of colour! You're not going to get very many
 details here, but you <em>will</em> get to jump into the LFE REPL and see a little
-code in action.</p>
-<p>For those that would enjoy a more in-depth introduction and would appreciate having the time to see the stars (and not just stunning plaid), you may be
-interested in checking out <a href="http://lfe.io/tutorial/">The LFE Tutorial</a>.</p>
+code in action.<sup>1</sup></p>
+<p>The rest of this quick-start assumes that you've followed the links in the previous section and have installed both Erlang as well as <code>rebar3</code>, but to take things further, you'll need to do one more thing: set up the LFE plugin.</p>
+<p>Each project you create with the LFE rebar3 plugin will generate a <code>rebar.config</code> file that automatically includes the plugin dependency, but that's only inside an LFE project. You need to bootstrap the LFE plugin by setting it up in your global <code>rebar.config</code>.</p>
+<p>The <a href="https://www.rebar3.org/docs/using-available-plugins">rebar3 docs</a> tell you this file is located at <code>~/.config/rebar3/rebar.config</code>. To set this up, you can safely execute the following in a terminal, even if the file already exists:</p>
+<pre><code class="language-shell">mkdir -p ~/.config/rebar3/
+touch ~/.config/rebar3/rebar.config
+</code></pre>
+<p>Then, in your preferred editor, open that file and add the entry for LFE rebar3 plugin. If that file is empty when you open it, then you can paste this whole thing in there:</p>
+<pre><code class="language-erlang">{plugins, [
+  {rebar3_lfe,
+    {git, &quot;https://github.com/lfe-rebar3/rebar3_lfe.git&quot;, {branch, &quot;master&quot;}}}
+]}.
+</code></pre>
+<p>If you want to pin your project to a specific release of the plugin, you can view the list of released versions here:</p>
+<ul>
+<li>https://github.com/lfe-rebar3/rebar3_lfe/tags</li>
+</ul>
+<p>And then use <code>tag</code> (with the version) instead of <code>branch</code>:</p>
+<pre><code class="language-erlang">{plugins, [
+  {rebar3_lfe,
+    {git, &quot;https://github.com/lfe-rebar3/rebar3_lfe.git&quot;, {tag, &quot;x.y.z&quot;}}}
+]}.
+</code></pre>
+<p>If your global rebar3 config file already has one or more plugins in it, then simply add a comma after the last one and paste the <code>{rebar3_lfe ...}</code> line from above (with no trailing comma!).</p>
 <h2><a class="header" href="#next-stop" id="next-stop">Next Stop</a></h2>
 <p>Ready for some LFE? Next you'll learn how to create a new LFE project with
 just one command ...</p>
+<div class="footnotes">
+<hr />
+<ol>
+<li>For those that would enjoy a more in-depth introduction and would appreciate having the time to see the stars (and not just stunning plaid), you may be
+interested in checking out <a href="http://lfe.io/tutorial/">The LFE Tutorial</a>.
+</li>
+</ol>
+</div>
 <h1><a class="header" href="#creating-a-new-project" id="creating-a-new-project">Creating a New Project</a></h1>
 <p><img src="https://raw.githubusercontent.com/lfe/docs/master/docs/current/images/barf.jpg"
      style="float: right; padding-left: 1em;">A project? Already?! It sounds
@@ -308,12 +334,13 @@ right.  You're going to be looking at LFE code next ...</p>
 <p><img src="https://raw.githubusercontent.com/lfe/docs/master/docs/current/images/smash.jpg"
      style="float: right; padding-left: 1em;">It may not seem like it,
 but we're off to a pretty fast start. If you had to do everything we've
-done, manually, you'd have given up by now. Seriously. Okay, maybe not.</p>
+done, manually, you'd have given up by now. Seriously. </p>
+<p>(Okay, maybe not.)</p>
 <p>Time to put the brakes on, though, 'cause you're gonna want to see this next
 part in slow motion.</p>
-<h2><a class="header" href="#repl-me-up" id="repl-me-up">REPL Me Up!</a></h2>
-<p>Sure thing :-) Just do this from your new LFE project directory:</p>
-<pre><code class="language-bash">$ rebar3 new repl
+<h1><a class="header" href="#repl-me-up" id="repl-me-up">REPL Me Up!</a></h1>
+<p>Make sure you've <code>cd</code>ed into your new LFE project directory, and then do this:</p>
+<pre><code class="language-bash">$ rebar3 lfe repl
 </code></pre>
 <p>This should give you something that looks like the following:</p>
 <pre><code>Erlang/OTP 23 [erts-11.0.2] [source] [64-bit] [smp:12:12] [ds:12:12:10] [async-threads:1] [hipe] [dtrace]
@@ -330,18 +357,17 @@ part in slow motion.</p>
 
 lfe&gt;
 </code></pre>
-<p>We're not going to spend a lot of time in the REPL right now, but feel free to
-take it for a spin. Try setting a variable:</p>
+<p>Try setting a variable:</p>
 <pre><code class="language-lisp">&gt; (set my-list (lists:seq 1 6))
 (1 2 3 4 5 6)
 </code></pre>
-<p>Here are some operations:</p>
+<p>Here are some operations using more functions from the built-in Erlang <code>lists</code> module:</p>
 <pre><code class="language-lisp">&gt; (* 2 (lists:sum my-list))
 42
 &gt; (* 2 (lists:foldl (lambda (n acc) (+ n acc)) 0 my-list))
 42
 </code></pre>
-<p>Turn that into a function:</p>
+<p>Let's turn that into a function:</p>
 <pre><code class="language-lisp">&gt; (defun my-sum (start stop)
     (let ((my-list (lists:seq start stop)))
       (* 2 (lists:foldl
@@ -354,9 +380,9 @@ my-sum
 <pre><code class="language-lisp">&gt; (my-sum 1 6)
 42
 </code></pre>
-<p>Enough with the fancy REPL play ... What about some <em>real</em> code? What does a <strong>project</strong>
+<p>Enough with the fancy REPL-play ... What about some <em>real</em> code? What does a <strong>project</strong>
 look like?</p>
-<h2><a class="header" href="#sample-code" id="sample-code">Sample Code</a></h2>
+<h1><a class="header" href="#sample-code" id="sample-code">Sample Code</a></h1>
 <p>Well, you've already seen some! But here is the full, if minimal, module
 generated by the LFE rebar3 plugin:</p>
 <pre><code class="language-lisp">(defmodule my-test-lib
@@ -379,7 +405,7 @@ out:</p>
 hello-world
 </code></pre>
 <p>Let's add to this module our new <code>my-sum</code> function from the REPL jam session
-above. In another terminal window (or text editor pane) open up the
+in the previous section. In another terminal window (or text editor pane) open up the
 <code>src/my-test-lib.lfe</code> file and past the <code>my-sum</code> function.</p>
 <p>When you're done, the entire file should look like this:</p>
 <pre><code class="language-lisp">(defmodule my-test-lib
@@ -404,7 +430,9 @@ above. In another terminal window (or text editor pane) open up the
 addition:</p>
 <pre><code class="language-lisp">&gt; (c &quot;src/my-test-lib.lfe&quot;)
 #(module my-test-lib)
-&gt; (my-test-lib:my-sum 1 6)
+</code></pre>
+<p>And call the module functions:</p>
+<pre><code class="language-lisp">&gt; (my-test-lib:my-sum 1 6)
 42
 &gt; (my-test-lib:my-sum 1 60)
 3660
@@ -425,12 +453,12 @@ LFE source code:</p>
     (! spawned-pid (tuple calling-pid msg))))
 </code></pre>
 <p>That bit of code demonstrates one of Erlang's core features in lovely Lisp
-syntax: message passing. When loaded into the REPL, that example shows some
+syntax: message passing. When loaded into the REPL, that code can demonstrate
 bidirectional message passing between the LFE shell and a spawned process.</p>
-<p>Want to give it a try? Add these to your module, and don't forget to update
-the <code>export</code> section of the module, too! (note that one function has an arity
+<p>Want to give it a try? Add those two new functions to your module, and don't forget to update
+the <code>export</code> section, too! (note that one function has an arity
 of <code>0</code> and the other and arity of <code>2</code>).</p>
-<p>When you're done, it should look like this:</p>
+<p>When you're done, your project module should look like this:</p>
 <pre><code class="language-lisp">(defmodule my-test-lib
   (export (my-fun 0)
           (my-sum 2)
@@ -463,7 +491,9 @@ of <code>0</code> and the other and arity of <code>2</code>).</p>
   (let ((spawned-pid (spawn 'my-test-lib 'print-result ())))
     (! spawned-pid (tuple calling-pid msg))))
 </code></pre>
-<p>Now let's compile it and take it for a spin:</p>
+<h1><a class="header" href="#message-passing" id="message-passing">Message-Passing</a></h1>
+<p>We glossed over this in the previous section, but in LFE (and Erlang) you can compile on-the-fly in a REPL session. This is super-conventient when prototyping functionality for a new project where you want to use the REPL, but you also want the benefits of using a file, so you don't loose your work.</p>
+<p>We made some changees to the sample code in the last section; let's compile it and take it for a spin:</p>
 <pre><code class="language-lisp">&gt; (c &quot;src/my-test-lib.lfe&quot;)
 #(module my-test-lib)
 </code></pre>
