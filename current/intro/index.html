@@ -4,7 +4,7 @@
 <head>
     <!-- Book generated using mdBook -->
     <meta charset="UTF-8">
-    <title>rebar3 - LFE Quick Start with rebar3_lfe</title>
+    <title>Introduction - LFE Quick Start with rebar3_lfe</title>
     
     
 
@@ -91,7 +91,7 @@
 
     <nav id="sidebar" class="sidebar" aria-label="Table of contents">
         <div class="sidebar-scrollbox">
-            <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> LFE Quick Start with rebar3_lfe</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../title.html"><strong aria-hidden="true">1.1.</strong> Title Page</a></li><li class="chapter-item expanded "><a href="../copyright.html"><strong aria-hidden="true">1.2.</strong> Copyright</a></li></ol></li><li class="chapter-item expanded "><a href="../intro/index.html"><strong aria-hidden="true">2.</strong> Introduction</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../intro/lfe.html"><strong aria-hidden="true">2.1.</strong> LFE</a></li><li class="chapter-item expanded "><a href="../intro/erlang.html"><strong aria-hidden="true">2.2.</strong> Erlang</a></li><li class="chapter-item expanded "><a href="../intro/rebar3.html" class="active"><strong aria-hidden="true">2.3.</strong> rebar3</a></li></ol></li><li class="chapter-item expanded "><a href="../plaid.html"><strong aria-hidden="true">3.</strong> Going Plaid</a></li><li class="chapter-item expanded "><a href="../proj.html"><strong aria-hidden="true">4.</strong> Creating a New Project</a></li><li class="chapter-item expanded "><a href="../code/index.html"><strong aria-hidden="true">5.</strong> LFE Code</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../code/repl.html"><strong aria-hidden="true">5.1.</strong> The REPL</a></li><li class="chapter-item expanded "><a href="../code/sample.html"><strong aria-hidden="true">5.2.</strong> Sample Code</a></li><li class="chapter-item expanded "><a href="../code/msgs.html"><strong aria-hidden="true">5.3.</strong> Message-Passing</a></li></ol></li><li class="chapter-item expanded "><a href="../behind.html"><strong aria-hidden="true">6.</strong> Behind the Scenes</a></li><li class="chapter-item expanded "><a href="../next.html"><strong aria-hidden="true">7.</strong> Where Next?</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../feedback.html">Feedback</a></li><li class="chapter-item expanded affix "><a href="../redirects/docs.html">LFE Documentation</a></li><li class="chapter-item expanded affix "><a href="../redirects/rebar3.html">LFE rebar3 Plugin</a></li><li class="chapter-item expanded affix "><a href="../redirects/mdbook.html">Built with mdBook</a></li></ol>
+            <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">LFE Quick Start with rebar3_lfe</a></li><li class="chapter-item expanded affix "><a href="../title.html">Title Page</a></li><li class="chapter-item expanded affix "><a href="../copyright.html">Copyright</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../intro/index.html" class="active"><strong aria-hidden="true">1.</strong> Introduction</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../intro/lfe.html"><strong aria-hidden="true">1.1.</strong> LFE</a></li><li class="chapter-item expanded "><a href="../intro/erlang.html"><strong aria-hidden="true">1.2.</strong> Erlang</a></li><li class="chapter-item expanded "><a href="../intro/rebar3.html"><strong aria-hidden="true">1.3.</strong> rebar3</a></li></ol></li><li class="chapter-item expanded "><a href="../plaid.html"><strong aria-hidden="true">2.</strong> Going Plaid</a></li><li class="chapter-item expanded "><a href="../proj.html"><strong aria-hidden="true">3.</strong> Creating a New Project</a></li><li class="chapter-item expanded "><a href="../code/index.html"><strong aria-hidden="true">4.</strong> LFE Code</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../code/repl.html"><strong aria-hidden="true">4.1.</strong> The REPL</a></li><li class="chapter-item expanded "><a href="../code/sample.html"><strong aria-hidden="true">4.2.</strong> Sample Code</a></li><li class="chapter-item expanded "><a href="../code/msgs.html"><strong aria-hidden="true">4.3.</strong> Message-Passing</a></li></ol></li><li class="chapter-item expanded "><a href="../behind.html"><strong aria-hidden="true">5.</strong> Behind the Scenes</a></li><li class="chapter-item expanded "><a href="../next.html"><strong aria-hidden="true">6.</strong> Where Next?</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../versions.html">Versions</a></li><li class="chapter-item expanded affix "><a href="../feedback.html">Feedback</a></li><li class="chapter-item expanded affix "><a href="../redirects/rebar3.html">LFE rebar3 Plugin</a></li><li class="chapter-item expanded affix "><a href="../redirects/docs.html">LFE Documentation</a></li><li class="chapter-item expanded affix "><a href="../redirects/mdbook.html">Built with mdBook</a></li></ol>
         </div>
         <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
     </nav>
@@ -174,40 +174,32 @@
 
             <div id="content" class="content">
                 <main>
-                    <h1><a class="header" href="#about-rebar3" id="about-rebar3">About <code>rebar3</code></a></h1>
-<p>Rebar3 is an Erlang tool that makes it easy to create, develop, and release Erlang libraries, applications, and systems in a repeatable manner.</p>
-<p>Rebar3 will:</p>
+                    <h1><a class="header" href="#introduction" id="introduction">Introduction</a></h1>
+<p>This is a version of the LFE quick start that has been re-imagined with
+the LFE rebar3 plugin in mind.</p>
+<p>We will cover the following:</p>
 <ul>
-<li>respect and enforce standard Erlang/OTP conventions for project
-structure so they are easily reusable by the community;</li>
-<li>manage source dependencies and Erlang <a href="https://hex.pm">packages</a>
-while ensuring repeatable builds;</li>
-<li>handle build artefacts, paths, and libraries such that standard
-development tools can be used without a headache;</li>
-<li>adapt to projects of all sizes on almost any platform;</li>
-<li>treat <a href="https://www.rebar3.org/docs/">documentation</a> as a feature,
-and errors or lack of documentation as a bug.</li>
+<li>How to get started quickly with LFE using just <code>rebar3</code> and your local
+installation of Erlang</li>
+<li>Creating a new LFE project</li>
+<li>Looking at LFE code in the REPL and in modules</li>
+<li>Provide a little insight on how this works</li>
+<li>Leave you with resources for jumping into LFE in more detail</li>
 </ul>
-<p>Rebar3 is also a self-contained Erlang script. It is easy to distribute or
-embed directly in a project. Tasks or behaviours can be modified or expanded
-with a <a href="https://www.rebar3.org/docs/using-available-plugins">plugin system</a>
-<a href="https://www.rebar3.org/docs/plugins">flexible enough</a> that even other languages
-on the Erlang VM will use it as a build tool.</p>
-<p>The <a href="https://www.rebar3.org/docs/getting-started#installing-binary">rebar3 site</a> provides some nice instructions on installing <code>rebar3</code>.</p>
 
                 </main>
 
                 <nav class="nav-wrapper" aria-label="Page navigation">
                     <!-- Mobile navigation buttons -->
                     
-                    <a rel="prev" href="../intro/erlang.html" class="mobile-nav-chapters previous"
+                    <a rel="prev" href="../copyright.html" class="mobile-nav-chapters previous"
                         title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                     
 
                     
-                    <a rel="next" href="../plaid.html" class="mobile-nav-chapters next"
+                    <a rel="next" href="../intro/lfe.html" class="mobile-nav-chapters next"
                         title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
@@ -220,14 +212,14 @@ on the Erlang VM will use it as a build tool.</p>
 
         <nav class="nav-wide-wrapper" aria-label="Page navigation">
             
-            <a rel="prev" href="../intro/erlang.html" class="nav-chapters previous" title="Previous chapter"
+            <a rel="prev" href="../copyright.html" class="nav-chapters previous" title="Previous chapter"
                 aria-label="Previous chapter" aria-keyshortcuts="Left">
                 <i class="fa fa-angle-left"></i>
             </a>
             
 
             
-            <a rel="next" href="../plaid.html" class="nav-chapters next" title="Next chapter"
+            <a rel="next" href="../intro/lfe.html" class="nav-chapters next" title="Next chapter"
                 aria-label="Next chapter" aria-keyshortcuts="Right">
                 <i class="fa fa-angle-right"></i>
             </a>
